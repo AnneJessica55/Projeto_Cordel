@@ -96,3 +96,11 @@ footer{
     font-family: var(--fonth2);
     font-size: 1em;
 }
+@media (max-width:580px){
+    section.imagem1{
+        background-position: center center;
+    }
+    section.imagem2{
+        background-position: center center;
+    }
+}

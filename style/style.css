@@ -1,0 +1,106 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Square+Peg&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+:root {
+    --fonth1: 'Montserrat', cursive;
+    --fonth2:'Ubuntu', cursive;
+    --fontdefault:'Square Peg', cursive;
+}
+
+* {
+    margin:0px;
+    padding: 0px;
+}
+html, body{
+    background-color: darkgray;
+    min-height: 100vh;
+}
+header {
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+}
+header > h1{
+    padding-top: 50px;
+   font-variant: small-caps;
+   font-family: var(--fonth1);
+   font-size: 6.5vw;
+   
+}
+header > h2{
+    padding-bottom: 50px;
+    font-family: var(--fonth2);
+}
+a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: 900;
+}
+section{
+    padding: 10vh 0px 10vh 30px;
+    line-height: 2em;
+    
+}
+section.normal{
+    background-color: whitesmoke;
+    color: black;
+}
+section.normal > p {
+    display: block;
+    padding: 30px;
+    font-family: var(--fontdefault);
+    font-size: 6vw;
+    line-height: 6.6vw;
+    color: #11207B;
+}
+section.imagem1{
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-color: rgb(59, 59, 59);
+    color: whitesmoke;
+    background-image: url(../img/flower.jpg);
+    background-position: right center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+section.imagem1 > p{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.514);
+    font-family: var(--fontdefault);
+    text-shadow: 1px 1px black;
+    font-size: 6vw;
+    line-height: 6.6vw;
+    padding: 30px;
+}
+section.imagem2 {
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-color: rgb(26, 26, 26);
+    background-image: url(../img/letter.jpg);
+    background-position: right center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: whitesmoke;
+}
+section.imagem2 > p{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.514);
+    font-family: var(--fontdefault);
+    text-shadow: 1px 1px black;
+    font-size: 6vw;
+    line-height: 6.6vw;
+    padding: 30px;
+}
+footer{
+    background-color: black;
+    color: azure;
+    text-align: center;
+    padding: 10px;
+    font-family: var(--fonth2);
+    font-size: 1em;
+}
+@media (max-width:580px){
+    section.imagem1{
+        background-position: center center;
+    }
+    section.imagem2{
+        background-position: center center;
+    }
+}
